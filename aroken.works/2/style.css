@@ -3,6 +3,7 @@ body{
   padding: 0;
   font-family: 'Open Sans', sans-serif;
     color: #595858;
+
 }
 
 a{
@@ -36,6 +37,7 @@ video{
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 
@@ -106,6 +108,7 @@ footer{
 .footer__container {
   padding: 40px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   gap: 20px;
@@ -115,9 +118,11 @@ footer{
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
   font-size: 15px;
   gap: 45px;
   margin: 15px 0;
+  justify-content: center;
 }
 
 .line {
