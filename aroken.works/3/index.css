@@ -1,0 +1,14 @@
+td, th, caption{
+  border: 1px solid black;
+  padding-right: 8px;
+}
+table {
+  border-collapse: collapse;
+  margin: 30px;
+}
+caption{
+  border-bottom: none;
+}
+.week{
+  color: red;
+}
