@@ -8,7 +8,9 @@ table {
 }
 caption{
   border-bottom: none;
+  font-weight: bold;
 }
 .week{
   color: red;
+
 }
