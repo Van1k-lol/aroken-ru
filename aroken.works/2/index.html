@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>lesson 2</title>
-</head>
-<body>
-    <h1 style="text-align: center; margin: 40px; text-transform: uppercase;">УрОк 2 (ПуСтОй)</h1>
-    <ul style="height: 100vh; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 20px; list-style-type: none; font-size: 30px;">
-        <li style="width: 300px;">разные картинки</li>
-        <li style="width: 300px;">разные картинки</li>
-        <li style="width: 300px;">разные картинки</li>
-        <li style="width: 300px;">разные картинки</li>
-        <li style="width: 300px;">разные картинки</li>
-        <li style="width: 300px; ">разные картинки</li>
-    </ul>
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__container">
+          <div class="header__logo">FIT STUDIO</div>
+          <ul class="header__contacts">
+            <li class="contacts__text">Первое посещение бесплатно</li>
+            <li class="contacts__tel">+7 (928) 282-28-82</li>
+          </ul>
+        </div>
+        <div class="line"></div>
+      </header>
+      <main>
+        <section class="main__top__container">
+          <h1 class="section__title">
+            Открытие нового
+            <p>филиала в центре города!</p>
+          </h1>
+          <div class="main__desc-1">
+            Фитнес клуб «Fit.Studio» рад сообщить об открытии нового филиала в
+            центре города. Новый клуб расположен в
+            <a
+              id="link-to-address"
+              href="https://yandex.ru/maps/org/fit_studio/40588218175/?display-text=FitStudio&ll=37.414304%2C55.718863&mode=search&sctx=ZAAAAAgBEAAaKAoSCUZCW86lzkJAES2zCMVW4EtAEhIJ9UiD29rCtz8R5geu8gTCnj8iBgABAgMEBSgKOABA3K0HSAFqAnJ1nQHNzMw9oAEAqAEAvQGfc%2BHDwgEGv578mZcBggIWKChjaGFpbl9pZDooNjAwMzE2MikpKYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=37.414304%2C55.718863&sspn=0.023204%2C0.007516&text=%7B%22text%22%3A%22FitStudio%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22chain_id%22%2C%22attr_values%22%3A%5B%226003162%22%5D%7D%5D%7D&z=15.91"
+              >удобном месте</a
+            >, рядом с остановками общественного транспорта, что делает его
+            доступным для всех жителей города. Новое просторное помещение
+            оборудовано современными тренажёрами, зонами для групповых занятий и
+            отдыха, а также сауной и бассейном.
+          </div>
+          <div class="main__desc-2">
+            Кроме того, в "FitLife" работают опытные тренеры, которые помогут
+            составить индивидуальную программу тренировок и диеты для достижения
+            желаемых результатов. Клиенты могут также воспользоваться услугами
+            персональных тренировок и консультаций по здоровому образу жизни
+          </div>
+          <img src="./imgs/gym-image.jpg" alt="gym-image" />
+        </section>
+        <section class="group__classes">
+          <h1 class="section__title">Групповые занятия</h1>
+          <div class="group__classes__desc">
+            В новом филиале «Fit.Studio» будут проводиться различные групповые
+            занятия. Каждый клиент сможет подобрать подходящий ему вид занятий и
+            найти комфортную среду для тренировок.
+          </div>
+          <ul class="types__classes">
+            <li class="type__class">Йога</li>
+            <li class="type__class">Пилатес</li>
+            <li class="type__class">Аэробика</li>
+            <li class="type__class">Танцы</li>
+            <li class="type__class">Силовые тренировки</li>
+          </ul>
+        </section>
+        <section class="main__video">
+          <h1 class="section__title">Обзор нового филиала</h1>
+          <video src="./imgs/gym-video.mp4" controls loop poster="./imgs/gym-image.jpg"></video>
+          <div class="group__classes__desc" style="max-width: none; margin-bottom: 100px;">
+            Приглашаем всех желающих посетить новый филиал фитнес клуба
+            "FitLife" и начать заботиться о своем здоровье и фитнесе прямо
+            сейчас
+          </div>
+        </section>
+      </main>
+      </div>
+      <footer>
+        <div class="footer__container">
+          <div class="header__logo">FIT STUDIO</div>
+          <ul class="nav">
+            <li class="footer__item"><a href="#">Клубы</a></li>
+            <li class="footer__item"><a href="#">Тренировки</a></li>
+            <li class="footer__item"><a href="#">Абонементы</a></li>
+            <li class="footer__item"><a href="#">Программа лояльности</a></li>
+            <li class="footer__item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="line"></div>
+          <div class="copyright">© Copyright. Все права защищены</div>
+        </div>
+      </footer>
+  </body>
 </html>
