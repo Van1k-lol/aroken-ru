@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./index.css" />
     <title>lesson 4</title>
   </head>
@@ -46,6 +47,7 @@
           placeholder="введите email"
           name="email"
           required
+          disabled
         />
       </fieldset>
       <fieldset class="form-group">
@@ -55,12 +57,17 @@
           id="message"
           class="textarea required"
         ></textarea>
-        <label class="label">
-          <input type="checkbox" class="checkbox" name="checkbox" required />Я
-          принимаю правила
+        <label class="label checkbox__label">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="checkbox"
+            required
+          />
+          <span>Я принимаю правила</span>
         </label>
       </fieldset>
-      <button type="submit">Отправить</button>
+      <button disabled type="submit">Отправить</button>
     </form>
   </body>
 </html>
