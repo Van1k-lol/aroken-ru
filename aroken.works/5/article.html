@@ -6,13 +6,37 @@
     <title>Fit Studio - Открытие нового филиала!</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/article.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="icon"
+      sizes="128x128"
+      href="./images/favicon-icon.svg"
+      type="image/svg+xml"
+    />
   </head>
   <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="container__inner">
+          <a href="/">
+            <img src="./images/logo.svg" width="84" height="45" alt="логотип" />
+          </a>
+          <div class="phone text__sub">
+            <p>Первое посещение бесплатно</p>
+            <a href="tel:+79282822882">+7 (928) 282-28-82</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <article class="article">
       <div class="container">
-        <h1 class="article__title large">Открытие нового филиала в центре города!</h1>
-        <p class="article__text">
+        <h1 class="title title__large">
+          Открытие нового филиала в центре города!
+        </h1>
+        <p class="text text__mb">
           Фитнес клуб «Fit.Studio» рад сообщить об открытии нового филиала
           в центре города. Новый клуб расположен в удобном месте, рядом
           с остановками общественного транспорта, что делает его доступным
@@ -20,20 +44,31 @@
           современными тренажёрами, зонами для групповых занятий и отдыха,
           а также сауной и бассейном.
         </p>
-        <p class="article__text">
+        <p class="text article__text-mb">
           Кроме того, в "FitLife" работают опытные тренеры, которые помогут
           составить индивидуальную программу тренировок и диеты для достижения
           желаемых результатов. Клиенты могут также воспользоваться услугами
           персональных тренировок и консультаций по здоровому образу жизни.
         </p>
-        <img src="./images/gym.jpg" alt="" class="img">
+        <div class="article__img-wrapper">
+          <img
+            class="article__decor article__decor-1"
+            src="./images/decor-item.svg"
+            alt="Декорация точки"
+          />
+          <img src="./images/gym.jpg" alt="Фото зала" class="img" />
+        </div>
       </div>
     </article>
     <article class="article">
       <div class="container">
-        <h2 class="article__title">Групповые Занятия</h2>
-        <p class="article__text">В новом филиале «Fit.Studio» будут проводиться различные групповые занятия. Каждый клиент сможет подобрать подходящий ему вид занятий и найти комфортную среду для тренировок.</p>
-        <ul class="article__list article__text">
+        <h2 class="title">Групповые Занятия</h2>
+        <p class="text text__mb">
+          В новом филиале «Fit.Studio» будут проводиться различные групповые
+          занятия. Каждый клиент сможет подобрать подходящий ему вид занятий
+          и найти комфортную среду для тренировок.
+        </p>
+        <ul class="article__list text">
           <li class="article__list-item">Йога</li>
           <li class="article__list-item">Пилатес</li>
           <li class="article__list-item">Аэробика</li>
@@ -44,11 +79,61 @@
     </article>
     <article class="article">
       <div class="container">
-        <h2 class="article__title">Обзор нового филиала</h2>
-        <video class="video"  src="./videos/gym-video.mp4" poster="./images/gym.jpg" controls muted></video>
-        <p class="article__text">Приглашаем всех желающих посетить новый филиал фитнес клуба "FitLife" и начать заботиться о своем здоровье и фитнесе прямо сейчас!</p>
+        <h2 class="title">Обзор нового филиала</h2>
+        <div class="article__img-wrapper">
+          <button class="article__play__button">
+            <img
+              width="24"
+              height="24"
+              src="./images/play__button.svg"
+              alt="начать просмотр"
+            />
+          </button>
+          <img
+            class="article__decor article__decor-2"
+            src="./images/decor-item.svg"
+            alt="декорация фона"
+          />
+          <video
+            class="video"
+            src="./videos/gym-video.mp4"
+            poster="./images/gym.jpg"
+            controls
+            muted
+          ></video>
+        </div>
+        <p class="text text-invite">
+          Приглашаем всех желающих посетить новый филиал фитнес клуба "FitLife"
+          и начать заботиться о своем здоровье и фитнесе прямо сейчас!
+        </p>
       </div>
     </article>
-     
+    <footer class="footer">
+      <div class="container footer-top">
+        <a href="/article.html">
+          <img
+            class="footer__logo"
+            src="./images/logo.svg"
+            width="84"
+            height="45"
+            alt="логотип"
+          />
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Клубы</a></li>
+            <li><a href="#">Тренировки</a></li>
+            <li><a href="#">Абонементы</a></li>
+            <li><a href="#">Программа лояльности</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© Copyright. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
