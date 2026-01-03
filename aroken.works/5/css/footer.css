@@ -47,3 +47,16 @@
   padding-top: 40px;
   border-top: 1px solid #d3cbd9;
 }
+
+
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 25px;
+  } 
+}
+@media (max-width: 567px) {
+  .footer{
+    padding-top: 40px;
+  }
+}

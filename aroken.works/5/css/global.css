@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+ul{
+  margin: 0;
+}
+
 section {
   margin-bottom: 140px;
 }
@@ -53,7 +57,7 @@ section {
 .title__large {
   font-size: 48px;
 }
-.title__small{
+.title__small {
   font-size: 24px;
   margin-bottom: 0;
   max-width: none;
@@ -94,19 +98,73 @@ section {
 .button:hover {
   opacity: 0.85;
 }
-.button:not(:disabled):active{
+.button:not(:disabled):active {
   background-color: #2474b9;
 }
 
-button.button:disabled{
+.decor::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 48px;
+  background: url("../images/decor-large-index.svg") repeat-x;
+}
+
+button.button:disabled {
   opacity: 0.65;
   cursor: default;
 }
-a, button{
+a,
+button {
   outline: none;
 }
 
-a:focus-visible, button:focus-visible, summary:focus-visible {
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
   outline: 2px solid #3596ed;
   outline-offset: 1px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (width <= 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (width <= 768px) {
+  .container {
+    max-width: 576px;
+  }
+  .title__large {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .home__page .title__large {
+    text-align: center;
+    max-width: inherit;
+  }
+  .title__small{
+    font-size: 22px;
+  }
+}
+@media (width <= 576px) {
+  section {
+    margin-bottom: 80px;
+  }
+  .header{
+    padding-bottom: 40px;
+  }
+  .title__large {
+    font-size: 32px;
+  }
+  .title__small{
+    font-size: 18px;
+  }
 }

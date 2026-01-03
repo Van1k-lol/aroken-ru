@@ -1,44 +1,34 @@
 .hero {
-  padding-top: 80px;
   position: relative;
 }
-.hero::after {
-  content: "";
-  position: absolute;
+.hero::before {
   bottom: 106px;
-  z-index: -1;
   width: 100%;
-  height: 48px;
-  background: url("../images/decor-large-index.svg") repeat-x;
 }
 
 .hero .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 28px;
 }
 
 .hero h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
   font-size: 62px;
-  line-height: 115%;
-  text-transform: uppercase;
-  color: #2c332f;
-  margin-bottom: 40px;
 }
 
 .hero h1 strong {
   color: #3596ed;
+  font-weight: 600;
+}
+
+.hero__info{
+  max-width: 492px;
 }
 .hero__info .text {
   max-width: 440px;
+  margin-bottom: 140px;
 }
 
-.hero__info .button {
-  margin-top: 140px;
-}
+
 
 .hero__images {
   display: flex;
@@ -51,7 +41,6 @@
 }
 .hero__images img:hover {
   transform: scale(1.03);
-  transition: transform 0.3s;
 }
 
 .hero__choose {
@@ -79,6 +68,7 @@
   display: flex;
   flex-direction: column;
   max-width: 284px;
+  flex: 1 1 25%;
   background-color: #fff;
   border: 1px solid #d3cbd9;
   overflow: hidden;
@@ -131,14 +121,9 @@
 .faq {
   position: relative;
 }
-.faq::before{
-  content: "";
-  position: absolute;
+.faq::before {
   top: 215px;
-  z-index: -1;
   width: calc(50% - 250px);
-  height: 48px;
-  background: url("../images/decor-large-index.svg");
 }
 .faq__container {
   display: flex;
@@ -166,6 +151,7 @@ summary {
 summary::after {
   content: "";
   display: inline-block;
+  flex-shrink: 0;
   background: url("../images/arrow-down.svg") no-repeat center / cover;
   width: 17px;
   height: 22px;
@@ -173,7 +159,7 @@ summary::after {
 summary::-webkit-details-marker {
   display: none;
 }
-details > p{
+details > p {
   padding: 0 20px 20px;
 }
 .faq__item {
@@ -181,7 +167,88 @@ details > p{
   border-top: 1px solid #d3cbd9;
   margin-bottom: 20px;
 }
-.faq__question {
+
+.faq__item:last-child {
+  margin-bottom: 0;
 }
-.text {
+
+/* ---------------media--------------- */
+/* ---------------media--------------- */
+/* ---------------media--------------- */
+
+@media (width <= 1440px) {  
+    .hero__images img {
+    width: 50%;
+    height: auto; /* Сбрасываем высоту, чтобы не было искажений */
+  }
+}
+@media (width <= 992px) {
+    .hero .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero::after{
+    display: none; 
+  }
+  .hero__info{
+    text-align: center;
+  }
+  .hero h1{
+    max-width: none;
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+  .hero__info .text{
+    max-width: inherit;
+    margin-bottom: 30px;
+  }
+  .news__container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .news__card{
+    flex-basis: 50%;
+    max-width: 350px; 
+  }
+  .news__card img{
+    width: 100%;
+  }
+  .faq::before{
+    display: none;
+  }
+  .faq__container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+
+@media (width <= 768px){
+  .hero h1{
+    font-size: 50px;
+  }
+  .news__card{
+    flex-basis: 100%;
+    max-width: 400px; 
+  }
+}
+
+
+@media (width <= 576px){
+  .hero{
+    padding-top: 60px;
+  }
+  .hero__info{
+    max-width: 410px;
+  }
+.hero h1{
+    font-size: 42px;
+  }
+
+  .hero__choose{
+    font-size: 14px;
+    max-width: 125px;
+    padding: 10px; 
+  }
 }
