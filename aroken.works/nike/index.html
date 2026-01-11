@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="./icons/nike-favicon-48x48.ico"
       type="image/x-icon"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/fslightbox.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
     <title>Nike Air Mag</title>
   </head>
@@ -104,21 +113,401 @@
               Nike <span class="hero__title-accent">air</span> mag
             </h1>
           </header>
-          <img
-            class="hero__img"
-            src="./imgs/hero-nike-air.png"
-            width="846"
-            height="713px"
-            alt="Кроссовок Nike Air Mag"
-          />
+          <picture>
+            <source srcset="./imgs/hero-nike-air.webp" type="image/webp" />
+            <img
+              class="hero__img"
+              src="./imgs/hero-nike-air.png"
+              width="846"
+              height="713px"
+              alt="Кроссовок Nike Air Mag"
+            />
+          </picture>
           <footer class="hero__footer">
             <a class="hero__details" href="#"
               >Подробнее
               <svg width="24" height="24">
-                <use class="hero__details-icon" href="./icons/sprite.svg#dbl-arr"></use>
+                <use
+                  class="hero__details-icon"
+                  href="./icons/sprite.svg#dbl-arr"
+                ></use>
               </svg>
             </a>
           </footer>
+        </div>
+      </section>
+      <section class="air-mag" id="air-mag">
+        <div class="container">
+          <h2 class="air-mag__title title-medium">Air Mag</h2>
+          <div class="air-mag__desc text-reugular">
+            Это не просто кроссовки — это шаг в будущее. С уникальным дизайном и
+            передовыми технологиями, эти кроссовки вдохновлены легендарной
+            киноделией и готовы сопровождать вас в любых приключениях.
+          </div>
+          <div class="air-mag__info-wrapper">
+            <picture>
+              <source srcset="./imgs/air-mag-2.webp" type="image/webp" />
+              <img
+                class="air-mag__img"
+                src="./imgs/air-mag-2.png"
+                width="911"
+                height="635"
+                loading="lazy"
+                alt="Кроссовки Nike Air Mag"
+              />
+            </picture>
+            <ul class="air-mag__list-info text-light">
+              <li class="air-mag__item-info">
+                инновационная технология амортизации, которая обеспечивает
+                непревзойденную поддержу суставов
+              </li>
+              <li class="air-mag__item-info">
+                высококачественные синтетические материалы для долговечности
+                и комфорта
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="sizes" class="sizes section">
+        <div class="container">
+          <h2 class="sizes__title title-medium">Размеры</h2>
+          <section class="product">
+            <div class="product__slider-wrapper">
+              <button
+                class="product__slider-button product__slider-button--left"
+                aria-label="Предыдущий слайд"
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/sprite.svg#arr-for-slider"
+                  ></use>
+                </svg>
+              </button>
+              <div class="swiper product__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product__slide-inner">
+                      <picture>
+                        <source
+                          srcset="./imgs/product-slides/slide1.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="./imgs/product-slides/slide1.png"
+                          class="product__slide-img"
+                          width="357"
+                          height="375"
+                          alt="Кроссовки Nike Air Mag, Вид спереди"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__slide-inner">
+                      <picture>
+                        <source
+                          srcset="./imgs/product-slides/slide2.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="./imgs/product-slides/slide2.png"
+                          class="product__slide-img"
+                          width="408"
+                          height="375"
+                          alt="Кроссовки Nike Air Mag, Вид сбоку"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__slide-inner">
+                      <picture>
+                        <source
+                          srcset="./imgs/product-slides/slide3.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          src="./imgs/product-slides/slide3.png"
+                          class="product__slide-img"
+                          width="442"
+                          height="375"
+                          alt="Кроссовки Nike Air Mag, Вид спереди"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="product__slider-button product__slider-button--right"
+                aria-label="Следующий слайд"
+              >
+                <svg width="40" height="40">
+                  <use
+                    class="product__slider-button-icon"
+                    href="./icons/sprite.svg#arr-for-slider"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <h3 class="product__title title-small">
+              Кроссовки
+              <strong class="product__title-accent">Nike Air Mag </strong>Back
+              To Future
+            </h3>
+            <p class="product__desc text-light">
+              Nike Air Mag — это кусочек киноистории и технологического
+              прогресса. Если вы ищете уникальную пару кроссовок, которая станет
+              не только стильным аксессуаром, но и ценным дополнением вашей
+              коллекции, Nike Air Mag — идеальный выбор.
+            </p>
+            <p class="product__price title-small">36 490 ₽</p>
+            <div class="product__sizes-wrapper">
+              <article class="product__sizes">
+                <h4 class="product__sizes-title product__sizes-title--in-stock">
+                  Размеры в наличии
+                </h4>
+                <div class="product__sizes-list" data-sizes="list">
+                  <button
+                    class="product__sizes-button"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    38
+                  </button>
+
+                  <button
+                    class="product__sizes-button"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    40
+                  </button>
+                  <button
+                    class="product__sizes-button product__sizes-button--active"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    41
+                  </button>
+                  <button
+                    class="product__sizes-button"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    42
+                  </button>
+                  <button
+                    class="product__sizes-button"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    44
+                  </button>
+                  <button
+                    class="product__sizes-button"
+                    aria-label="Выбрать размер"
+                    title="Выбрать размер"
+                    data-sizes="button"
+                  >
+                    45
+                  </button>
+                </div>
+                <div class="product__buy-wrapper">
+                  <button class="product__buy-button">Купить в 1 клик</button>
+                  <button
+                    class="product__add-to-cart-button"
+                    aria-label="Добавить в корзину"
+                    title="Добавить в корзину"
+                  >
+                    <svg width="23" height="23">
+                      <use
+                        href="./icons/sprite.svg#sizes-cart"
+                        class="product__add-to-cart-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+              <article class="product__sizes">
+                <h4 class="product__sizes-title product__sizes-title--on-order">
+                  Размеры под заказ
+                </h4>
+                <div class="product__sizes-list">
+                  <button class="product__sizes-button" disabled>36</button>
+
+                  <button class="product__sizes-button" disabled>37</button>
+                  <button class="product__sizes-button" disabled>43</button>
+                  <button class="product__sizes-button" disabled>46</button>
+                  <button class="product__sizes-button" disabled>47</button>
+                </div>
+                <a class="product__sizes-order-link" href="#">
+                  Заказать размер
+                </a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="characteristics" class="section characteristics">
+        <div class="container">
+          <h2 class="characteristics__title title-medium">Характеристики</h2>
+          <div class="characteristics__video">
+            <picture>
+              <source
+                srcset="./imgs/characteristics-image-prev.webp"
+                type="image/webp"
+              />
+              <img
+                class="characteristics__video-preview"
+                src="./imgs/characteristics-image-prev.jpg"
+                width="1240"
+                height="600px"
+                loading="lazy"
+                alt="Кроссовки Nike Air Mag лежат на желтой коробке"
+              />
+            </picture>
+            <a
+              data-fslightbox
+              class="characteristics__video-play-link"
+              title="Запустить видео"
+              href="https://rutube.ru/video/0d17f95c7963f0877dbdd682a5c6411f/"
+            >
+              <img
+                class="characteristics__video-play-icon"
+                src="./icons/play-icon.svg"
+                width="17"
+                height="24"
+                alt="Запустить видео"
+              />
+            </a>
+          </div>
+          <div class="characteristics__list">
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#planet"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Футуристический дизайн
+              </h3>
+              <p class="characteristics__card-desc">
+                Nike Air Mag выделяются своим уникальным и оригинальным
+                дизайном, который сразу же привлекает внимание. Эта модель
+                создана для тех, кто ценит стиль, вдохновленный наукой и
+                фантастикой
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="54" height="54">
+                <use href="./icons/characteristics-sprite.svg#lacing"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Автоматическая шнуровка
+              </h3>
+              <p class="characteristics__card-desc">
+                Инновационная система автоматической шнуровки обеспечивает
+                идеальную фиксацию обуви на ноге без необходимости вручную
+                завязывать шнурки, что значительно повышает комфорт
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#limit"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Ограниченный выпуск
+              </h3>
+              <p class="characteristics__card-desc">
+                Nike Air Mag были выпущены в ограниченном количестве, что делает
+                каждую пару желанным объектом для коллекционеров и любителей
+                уникальных кроссовок
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#lighting"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Встроенная подсветка
+              </h3>
+              <p class="characteristics__card-desc">
+                Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
+                темное время суток. Это придает им еще больше оригинальности и
+                уникальности
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#comfort"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Комфорт и поддержка
+              </h3>
+              <p class="characteristics__card-desc">
+                Модель предлагает высокий уровень комфорта благодаря
+                качественной амортизации и поддержке стопы, что делает их
+                идеальными для длительного ношения
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#material"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Современные материалы
+              </h3>
+              <p class="characteristics__card-desc">
+                Nike Air Mag изготовлены из высококачественных синтетических
+                материалов, которые обеспечивают долговечность, устойчивость к
+                износу и легкость в уходе
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#clutch"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Хорошая сцепляемость
+              </h3>
+              <p class="characteristics__card-desc">
+                Подошва кроссовок обладает отличным сцеплением с различными
+                поверхностями, что обеспечивает надежность при ходьбе и беге
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#status"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Культовый статус
+              </h3>
+              <p class="characteristics__card-desc">
+                Nike Air Mag стали культовыми благодаря своему появлению в кино
+                "Назад в будущее 2", что подчеркивает их историческую и
+                культурную значимость
+              </p>
+            </article>
+            <article class="characteristics__card">
+              <svg class="characteristics__card-icon" width="56" height="56">
+                <use href="./icons/characteristics-sprite.svg#style"></use>
+              </svg>
+              <h3 class="characteristics__card-title title-xs">
+                Яркое дополнение к любому образу
+              </h3>
+              <p class="characteristics__card-desc">
+                Кроссовки легко вписываются в различные стили одежды, позволяя
+                создавать уникальные образы. Они могут дополнить как спортивный,
+                так и повседневный стиль
+              </p>
+            </article>
+          </div>
         </div>
       </section>
     </main>

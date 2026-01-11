@@ -3,10 +3,14 @@
   --font-family: "Montserrat", sans-serif;
   /* colors */
   --main-color: #fff;
+  --main-glow-color: #ffffff4d;
   --accent-color: #ffea00;
+  --accent-glow-color: #ffea004d;
   --bg-color: #2a2a29;
   --secondary-color: #c9c69b;
+  --disable-glow-color: #5d5d564d;
   --disable-color: #5d5d56;
+  --overlay-color:#2a2a2980;
   --shadow-color: #181817;
 
   /* container */

@@ -4,7 +4,7 @@
 
 @media (width > 576px) {
   .hero{
-    padding-bottom: 94px;
+    padding-bottom: 93px;
   }
 }
 @media (width <= 576px) {
@@ -60,10 +60,7 @@
     left: 0;
   }
 }
-@media (width <= 768px) {
-  .hero__benefits-list {
-  }
-}
+
 
 .hero__benefits-item {
   font-weight: 400;
