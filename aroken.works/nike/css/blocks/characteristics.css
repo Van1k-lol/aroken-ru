@@ -73,8 +73,7 @@
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
   gap: 40px 20px;
 }
-.characteristics__card {
-}
+
 .characteristics__card-icon {
   margin-bottom: 4px;
   transform: translateX(-8px);

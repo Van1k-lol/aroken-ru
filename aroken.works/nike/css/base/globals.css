@@ -4,9 +4,9 @@
   color: var(--main-color);
   scroll-behavior: smooth;
   scroll-padding: 108px;
+  scrollbar-gutter: stable;
 }
 .page__body {
-  height: 5000px;
   min-width: 375px;
   background-color: var(--bg-color);
 }
